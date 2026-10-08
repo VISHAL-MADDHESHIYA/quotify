@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="A modern Random Quote Generator built with HTML, CSS and JavaScript. Discover inspiring quotes with a single click.">
+
+    <meta name="author" content="Vishal Maddheshiya">
+
+    <title>Quotify — Random Quote Generator</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         Background Effects
+    ================================= -->
+
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+
+    <!-- ================================
+         Main Application
+    ================================= -->
+
+    <main class="app-container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <a href="#" class="brand">
+
+                <span class="brand-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </span>
+
+                <span class="brand-text">
+                    <span class="brand-name">QUOTIFY</span>
+                    <span class="brand-tagline">Random Quote Generator</span>
+                </span>
+
+            </a>
+
+            <div class="header-badge">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Daily Inspiration</span>
+            </div>
+
+        </header>
+
+
+        <!-- ================================
+             Hero Section
+        ================================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    WORDS THAT MATTER
+                </span>
+
+                <h1>
+                    Find a thought
+                    <span>worth remembering.</span>
+                </h1>
+
+                <p>
+                    Discover inspiring words from thinkers, creators,
+                    and visionaries. One click, one new perspective.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             Quote Card
+        ================================= -->
+
+        <section class="quote-section">
+
+            <div class="quote-card" id="quoteCard">
+
+                <!-- Decorative Quote Icon -->
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+
+                <!-- Quote Content -->
+                <div class="quote-content">
+
+                    <p class="quote-text" id="quoteText">
+                        The best way to predict the future is to create it.
+                    </p>
+
+                    <div class="quote-divider"></div>
+
+                    <p class="quote-author" id="quoteAuthor">
+                        — Peter Drucker
+                    </p>
+
+                </div>
+
+
+                <!-- Quote Number -->
+                <div class="quote-number">
+                    <span id="quoteNumber">01</span>
+                    <span class="number-label">/ 10</span>
+                </div>
+
+            </div>
+
+
+            <!-- ================================
+                 Action Buttons
+            ================================= -->
+
+            <div class="actions">
+
+                <button
+                    class="btn btn-primary"
+                    id="newQuoteBtn"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-shuffle"></i>
+
+                    <span>New Quote</span>
+
+                </button>
+
+
+                <button
+                    class="btn btn-secondary"
+                    id="copyBtn"
+                    type="button"
+                    aria-label="Copy quote"
+                >
+
+                    <i class="fa-regular fa-copy"></i>
+
+                    <span>Copy</span>
+
+                </button>
+
+
+                <button
+                    class="btn btn-secondary"
+                    id="shareBtn"
+                    type="button"
+                    aria-label="Share quote"
+                >
+
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+
+                    <span>Share</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Copy/Share Status -->
+            <div
+                class="action-status"
+                id="actionStatus"
+                aria-live="polite"
+            ></div>
+
+        </section>
+
+
+        <!-- ================================
+             Statistics
+        ================================= -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div class="stat-info">
+
+                    <span class="stat-value" id="totalQuotes">
+                        10+
+                    </span>
+
+                    <span class="stat-label">
+                        Quotes
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div class="stat-info">
+
+                    <span class="stat-value">
+                        Instant
+                    </span>
+
+                    <span class="stat-label">
+                        Generation
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="stat-info">
+
+                    <span class="stat-value">
+                        Vanilla
+                    </span>
+
+                    <span class="stat-label">
+                        JavaScript
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             Technology Tags
+        ================================= -->
+
+        <section class="tech-section">
+
+            <span class="tech-label">
+                BUILT WITH
+            </span>
+
+            <div class="tech-tags">
+
+                <span class="tech-tag html-tag">
+                    <i class="fa-brands fa-html5"></i>
+                    HTML5
+                </span>
+
+                <span class="tech-tag css-tag">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    CSS3
+                </span>
+
+                <span class="tech-tag js-tag">
+                    <i class="fa-brands fa-js"></i>
+                    JavaScript
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             Footer
+        ================================= -->
+
+        <footer class="footer">
+
+            <p>
+                Designed & Built with
+                <span class="heart">♥</span>
+                by <strong>Vishal Maddheshiya</strong>
+            </p>
+
+            <div class="footer-links">
+
+                <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ================================
+         JavaScript
+    ================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
