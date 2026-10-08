@@ -2,6 +2,11 @@
 
 A modern, responsive Random Quote Generator with a premium dark/neon/glassmorphism UI. Built with vanilla HTML, CSS, and JavaScript.
 
+## 🔗 Live Links
+🌐 Live Demo: https://vishal-maddheshiya.github.io/quotify/
+
+📦 GitHub Repo: https://github.com/VISHAL-MADDHESHIYA/quotify
+
 ## ✨ Features
 
 - 🎲 **Random Quote Generation** – Get a new inspirational quote with a single click.
